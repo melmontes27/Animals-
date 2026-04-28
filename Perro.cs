@@ -1,5 +1,3 @@
-// Perro.cs  –  Clase hija (hereda de Animal)
-
 class Perro : Animal          // <-- los dos puntos significan "hereda de"
 {
     // Atributo propio de Perro
@@ -32,12 +30,12 @@ class Program
 {
     static void Main()
     {
-        // Crear un Animal
-        //Animal miAnimal = new Animal("León", 5);
-        //miAnimal.MostrarInfo();       // Nombre: León, Edad: 5
-        //miAnimal.HacerSonido();       // León hace un sonido.
+        //Crear un Animal
+        Perro miAnimal = new Perro("Caronte", 5, "Golden");
+        miAnimal.MostrarInfo();       // Nombre: León, Edad: 5
+        miAnimal.HacerSonido();       // León hace un sonido.
 
-        Console.WriteLine();          // línea en blanco
+        Console.WriteLine("Raza: " + miAnimal.Raza);          // línea en blanco
 
         // Crear un Perro
         Perro miPerro = new Perro("Rex", 3, "Labrador");
